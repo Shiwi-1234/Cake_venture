@@ -1,5 +1,5 @@
 class OrderItem < ApplicationRecord
-    belongs_to :Order
-    belongs_to :MenuItem
-    belongs_to :SubCategory
+    belongs_to :order
+    belongs_to :menu_item
+    belongs_to :sub_category
 end

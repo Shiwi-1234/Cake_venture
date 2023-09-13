@@ -62,8 +62,19 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "Cake_shop_production"
 
-  config.action_mailer.perform_caching = false
-
+  # config.action_mailer.perform_caching = false
+  # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+ 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+  :user_name => 'f96f1787352e35',
+  :password => '90c023589b593d',
+  :address => 'sandbox.smtp.mailtrap.io',
+  :host => 'sandbox.smtp.mailtrap.io',
+  :port => '2525',
+  :authentication => :cram_md5
+}
+  
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false

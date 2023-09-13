@@ -1,6 +1,6 @@
 class UserSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :id, :name, :email, :phone_number, :address,:pin_code
+  attributes :id, :name, :user_email, :phone_number, :address,:pin_code
 
   attribute :image do |object, params|    
     if object&.image&.attached?

@@ -65,6 +65,9 @@ group :development do
 end
 gem 'byebug'
 gem 'fast_jsonapi'
+gem "devise" 
+gem 'sass-rails'
+gem 'activeadmin', '~> 3.0.0' # Make sure you specify the desired version
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
